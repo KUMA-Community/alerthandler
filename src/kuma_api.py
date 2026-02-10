@@ -43,7 +43,7 @@ class Kuma:
 
 
     def _make_request(self, method, route, params=None, data=None, files=None, resp_status_code_expected=200, response_type='json'):
-        url = 'https://{}:{}/api/v1/{}'.format(self.address, self.port, route)
+        url = 'https://{}:{}/api/v3/{}'.format(self.address, self.port, route)
         try:
             response = self.session.request(
                 method, url,
